@@ -320,4 +320,69 @@ table {
   color: white;
   font-size: 1.3rem;
 }
+
+#food-preview {
+  background: #f4f8fb;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#food-preview h2 {
+  text-align: center;
+}
+
+#food-preview .button-rounded {
+  background: #ed4852;
+  color: white;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 30px;
+}
+
+#food-preview .food-slider {
+  width: 100%;
+}
+
+#food-preview .food-slider .slide {
+  width: 20%;
+  position: relative;
+  height: 500px;
+}
+
+#food-preview .food-slider .slide .background {
+  background: white;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
+#food-preview .food-slider .slide .content {
+  position: absolute;
+  z-index: 2;
+}
+
+#food-preview .food-slider .slide img {
+  max-width: 250px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=main.css.map */
