@@ -170,6 +170,55 @@ table {
 }
 
 #welcome .welcome-jumbo {
-  background: red;
+  max-width: calc(100vw - 350px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #3ea0f7;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #3ea0f7 0%, #0971ce 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  overflow: hidden;
+  padding: 100px;
+}
+
+#welcome .welcome-jumbo .status {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+#welcome .welcome-jumbo h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: white;
+  margin-bottom: 100px;
+}
+
+#welcome .welcome-jumbo .burger-fries {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
