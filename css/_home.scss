@@ -24,10 +24,22 @@
                 padding-bottom: 20px;
                 margin-bottom: 20px;
             }
-            ul{
+            .links{
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
+                li a{
+                    font-size: 1.1rem;
+                    color: black;
+                    font-weight: 700;
+                    text-decoration: none;
+                    margin-bottom: 1.4rem;
+                    display: block;
+                    transition: color .3s ease-in-out;
+                    &:hover{
+                        color: red;                        
+                    }
+                }
             }
         }
     }

@@ -97,10 +97,25 @@ table {
   margin-bottom: 20px;
 }
 
-#welcome .welcome-menu .menu ul {
+#welcome .welcome-menu .menu .links {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+#welcome .welcome-menu .menu .links li a {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1.4rem;
+  display: block;
+  -webkit-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+#welcome .welcome-menu .menu .links li a:hover {
+  color: red;
 }
 
 #welcome .welcome-jumbo {
