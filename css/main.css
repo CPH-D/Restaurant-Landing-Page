@@ -221,4 +221,103 @@ table {
   width: 100%;
   position: relative;
 }
+
+#information {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+}
+
+#information .restaurant-image {
+  overflow: hidden;
+  height: 100%;
+}
+
+#information .restaurant-image img {
+  width: 100%;
+}
+
+#information .info {
+  padding: 100px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#information .info h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#information .info .paragraphs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+  line-height: 1.7;
+  color: #525e66;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+#information .info .about-link {
+  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+#information .info .about-link span {
+  margin-right: 20px;
+}
+
+#information .info .about-link .circle-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ed4852;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#information .info .about-link .circle-right .fa-chevron-right {
+  color: white;
+  font-size: 1.3rem;
+}
 /*# sourceMappingURL=main.css.map */
