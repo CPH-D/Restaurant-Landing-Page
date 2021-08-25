@@ -66,7 +66,8 @@
             bottom: 100px;
             .address{
                 color: #7a8d99;
-                margin-bottom: 20px;           
+                margin-bottom: 20px;
+                line-height: 1.5;        
             }
             .phone-number a{
                 color: #0971ce;
@@ -82,16 +83,16 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: #3ea0f7; /* Old browsers */
-        background: -moz-radial-gradient(center, ellipse cover, #3ea0f7 0%, #0971ce 100%); /* FF3.6-15 */
-        background: -webkit-radial-gradient(center, ellipse cover, #3ea0f7 0%,#0971ce 100%); /* Chrome10-25,Safari5.1-6 */
-        background: radial-gradient(ellipse at center, #3ea0f7 0%,#0971ce 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: #ed4852; /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #ed4852 0%, #9c1b24 100%); /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, #ed4852 0%,#9c1b24 100%); /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, #ed4852 0%,#9c1b24 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         overflow: hidden;
         padding: 100px;
         .status{
             display: inline-block;
-            padding: 10px;
-            font-size: 1.3rem;
+            padding: 10px 15px;
+            font-size: .9rem;
             font-weight: 700;
             color: white;
             background: black;
@@ -108,7 +109,7 @@
         }
         .burger-fries{
             width: 100%;
-            max-width: 1000px;
+            // max-width: 1000px;
             // animation: moveUpandDown 2.5s linear infinite;
             position: relative;
         }
