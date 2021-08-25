@@ -6,8 +6,7 @@
     .welcome-menu{
         background: white;
         padding: 50px;
-        display: flex;
-        flex-direction: column;
+        position: relative;
         .logo{
             display: flex;
             justify-content: center;
@@ -59,6 +58,21 @@
                 width: 30px;
                 border-radius: 50%;
                 margin-right: 10px;
+            }
+        }
+        .location{
+            align-self: center;
+            position: absolute;
+            bottom: 100px;
+            .address{
+                color: #7a8d99;
+                margin-bottom: 20px;           
+            }
+            .phone-number a{
+                color: #0971ce;
+                font-size: 2rem;
+                font-weight: 700;
+                text-decoration: none;
             }
         }
     }

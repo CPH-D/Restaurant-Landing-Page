@@ -71,13 +71,7 @@ table {
 #welcome .welcome-menu {
   background: white;
   padding: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
 }
 
 #welcome .welcome-menu .logo {
@@ -153,6 +147,26 @@ table {
   width: 30px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+#welcome .welcome-menu .location {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: absolute;
+  bottom: 100px;
+}
+
+#welcome .welcome-menu .location .address {
+  color: #7a8d99;
+  margin-bottom: 20px;
+}
+
+#welcome .welcome-menu .location .phone-number a {
+  color: #0971ce;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 #welcome .welcome-jumbo {
