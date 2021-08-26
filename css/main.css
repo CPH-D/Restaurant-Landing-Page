@@ -353,13 +353,53 @@ table {
   margin-bottom: 120px;
 }
 
-#food-preview .food-slider {
+#food-preview .container {
   width: 100%;
   max-width: 1400px;
+  position: relative;
+}
+
+#food-preview .container .left-btn, #food-preview .container .right-btn {
+  background: red;
+  color: white;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  display: inline-block;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#food-preview .container .left-btn {
+  left: -35px;
+}
+
+#food-preview .container .right-btn {
+  right: -35px;
+}
+
+#food-preview .food-slider {
+  width: 100%;
+  max-width: 1400px;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+#food-preview .food-slider .sliding-system {
+  white-space: nowrap;
+  -webkit-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
 }
 
 #food-preview .food-slider .slide {
@@ -367,6 +407,8 @@ table {
   position: relative;
   height: 500px;
   cursor: pointer;
+  display: inline-block;
+  white-space: normal;
 }
 
 #food-preview .food-slider .slide:hover .background {
