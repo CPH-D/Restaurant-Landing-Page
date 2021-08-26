@@ -353,6 +353,7 @@ table {
 
 #food-preview .food-slider {
   width: 100%;
+  max-width: 1200px;
 }
 
 #food-preview .food-slider .slide {
@@ -374,9 +375,37 @@ table {
 #food-preview .food-slider .slide .content {
   position: absolute;
   z-index: 2;
+  padding: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#food-preview .food-slider .slide .content .food-title {
+  color: #ed4852;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+#food-preview .food-slider .slide .content .food-description {
+  font-size: .8rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: #7a8d99;
 }
 
 #food-preview .food-slider .slide img {
+  width: 95%;
   max-width: 250px;
 }
 
